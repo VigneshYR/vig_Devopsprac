@@ -11,5 +11,10 @@ pipeline {
                 sh 'echo "im deploying"'
             }
             }
+            stage('cpu details'){
+                steps{
+                    sh ''' lscpu'''
+                }
+            }
         }
     }
