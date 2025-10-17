@@ -3,7 +3,7 @@ package com.mypractice.helloworldapp;
 /**
  * Hello world!
  */
-public class App {
+public class Helloworldapp {
 
     private static final String MESSAGE = "Hello World!";
 
