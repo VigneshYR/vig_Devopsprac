@@ -7,7 +7,7 @@ public class Helloworldapp {
 
     private static final String MESSAGE = "Hello World!";
 
-    public App() {}
+    public Helloworldapp() {}
 
     public static void main(String[] args) {
         System.out.println(MESSAGE);
