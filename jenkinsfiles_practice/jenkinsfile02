@@ -1,6 +1,7 @@
  groovy 
         pipeline {
-                agent any stages {
+                agent any {
+                stages {
                             stage('Checkout') {
                                 steps {
                                       sh 'checkout scm'
@@ -18,8 +19,9 @@
                           }
                             stage('Archive') {
                             steps {
-                         archiveArtifacts artifacts: '**/target/*.jar'
+                            archiveArtifacts artifacts: '**/target/*.jar'
                          }
                        }
                    }
+                }
               }
