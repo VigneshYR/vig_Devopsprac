@@ -18,7 +18,7 @@
                               }
                               stage('Archive') {
                                 steps {
-                                  sh 'archiveArtifacts artifacts: '**/target/*.jar''
+                                 archiveArtifacts artifacts: '**/target/*.jar'
                                 }
                               }
                           }
