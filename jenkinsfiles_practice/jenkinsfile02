@@ -8,8 +8,7 @@
                                    }
                               stage('Build') {
                                 steps {
-                                  sh 'mvn clean 
-                                    package'
+                                  sh 'mvn clean package'
                   
                               }
                               stage('Test') {
@@ -19,7 +18,7 @@
                               }
                               stage('Archive') {
                                 steps {
-                                  archiveArtifacts artifacts: '**/target/*.jar'
+                                  sh 'archiveArtifacts artifacts: '**/target/*.jar''
                                 }
                               }
                           }
