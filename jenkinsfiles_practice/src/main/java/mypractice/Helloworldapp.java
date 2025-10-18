@@ -1,4 +1,4 @@
-package com.mypractice.helloworldapp;
+package com.mypractice.Helloworldapp;
 
 /**
  * Hello world!
